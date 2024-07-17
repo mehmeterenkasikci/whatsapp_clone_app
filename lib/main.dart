@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_app/common/utils/theme/dark_theme.dart';
-import 'package:whatsapp_clone_app/common/utils/theme/light_theme.dart';
-import 'package:whatsapp_clone_app/features/welcome/pages/welcome.page.dart';
+import 'package:whatsapp_clone_app/common/theme/dark_theme.dart';
+import 'package:whatsapp_clone_app/common/theme/light_theme.dart';
+import 'package:whatsapp_clone_app/feature/auth/pages/user_info_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: lightTheme(),
         darkTheme: darkTheme(),
         themeMode: ThemeMode.system,
-        home: const WelcomePage());
+        home: const UserInfoPage());
   }
 }
